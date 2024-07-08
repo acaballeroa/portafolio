@@ -1,0 +1,213 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --color-primario: #000000;
+    --color-secundario: #F6F6F6;
+    --color-terciario: #22D4FD;
+    --color-hover: #272727;
+
+    --fuente-krona: 'Krona One', sans-serif;
+    --fuente-montserrat: 'Montserrat', sans-serif;
+
+    --tamano-fuente-1-5rem: 1.5rem;
+    --tamano-fuente-2-25rem: 2.25rem;
+    --tamano-fuente-2-5rem: 2.5rem;
+    --tamano-fuente-3-125rem: 3.125rem;
+}
+
+* {
+    padding: 0;
+    margin:0;
+}
+
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+}
+
+.header
+{
+    padding: 2% 0% 0% 15%;
+}
+
+.header__menu
+{
+    display: flex;
+    gap: 80px;
+}
+
+.header__menu__link
+{
+    font-family: var(--fuente-montserrat);
+    font-size: var(--tamano-fuente-1-5rem);
+    font-weight: 600px;
+    color: var(--color-terciario);
+    text-decoration: none;
+}
+
+.header__menu__link:hover
+{
+    color: var(--color-hover);
+}
+
+.presentacion {
+    padding: 6% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.presentacion__contenido{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentacion__contenido__titulo{
+    font-size: var(--tamano-fuente-2-25rem);
+    font-family: var(--fuente-krona);
+}
+
+.titulo-destaque {
+    color: var(--color-terciario); ;
+}
+
+.presentacion__contenido__texto{
+    font-size: var(--tamano-fuente-1-5rem);
+    font-family: var(--fuente-montserrat);
+}
+
+.presentacion__enlaces{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.presentacion__enlaces__subtitulo{
+    font-family: var(--fuente-krona);
+    font-weight: 400;
+    font-size: var(--tamano-fuente-1-5rem);
+}
+
+.presentacion__enlaces__link{
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      border: 2px solid var(--color-terciario);
+      width: 378px;
+      text-align: center;
+      border-radius: 8px;
+      font-size: var(--tamano-fuente-1-5rem);
+      font-weight: 600;
+      padding: 21.5px 0;
+      text-decoration: none;
+      color: var(--color-primario);
+      font-family: var(--fuente-montserrat);
+}
+
+.presentacion__enlaces__link:hover{
+    background-color: var(--color-hover);
+}
+
+.footer{
+    color: var(--color-primario);
+    background-color: var(--color-terciario);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fuente-montserrat);
+    font-size: var(--tamano-fuente-1-5rem);
+    font-weight: 400;
+}
+
+.presentacion__imagen
+{
+    display: flex;
+    height: 900px;
+    width: 400px;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.presentacion__contenido__curriculo
+{
+    width: 915px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.imagen__sobremi{
+    border-radius: 50%;
+    width: 450px;
+    height: 600px;
+}
+
+.imagen__curriculo{
+    border-radius: 50%;
+    width: 300px;
+    height: 400px;
+}
+
+.informacion__contacto {
+    display: flex;
+    text-align: right;
+    gap: 100px;
+    width: 900px;
+    padding: 20px 0px;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.resumen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: var(--fuente-montserrat);
+    font-size: var(--tamano-fuente-2-5rem);
+}
+
+.trabajo__item, .educacion__item, .habilidades__item {
+    margin: 10px;
+    margin-bottom: 10px;
+}
+
+.titulos_contenido_curriculo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: var(--fuente-montserrat);
+    font-size: var(--tamano-fuente-3-125rem);
+}
+
+@media (max-width: 1200px) {
+    
+    .header{
+         padding: 10%;  
+    }
+    .header__menu{
+        justify-content: center;
+    }
+    .presentacion{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    
+    .presentacion__contenido
+    {
+       width: auto; 
+    }
+}
